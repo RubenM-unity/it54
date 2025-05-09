@@ -1,0 +1,95 @@
+/* Main colours:
+        #FCE814 Yellow
+        #0674BD Blue
+        #8082A0 Grey
+        #F0F1FF White
+        */
+        body {
+            background-color: #FCE814;
+            font-family: 'Press Start 2P', cursive;
+        }
+        h1 {
+            color: #0674BD;
+        }
+        button {
+            background-color: #FCE814; /* Yellow */
+            color: #0674BD; /* Blue */
+            border: 2px solid #8082A0; /* Grey */
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #0674BD; /* Blue */
+            color: #FCE814; /* Yellow */
+            border-color: #F0F1FF; /* White */
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 5px #8082A0; /* Grey glow */
+        }
+        .sidebar {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 200px; /* Adjust to your desired sidebar width */
+            height: 100%;
+            background-color: #FCE814;
+            color: #0674BD;
+            padding-top: 20px;
+            box-sizing: border-box;
+            border: 5px solid #8082A0;
+        }
+        .top-bar {
+            width: 100%;
+            background-color: #FCE814; /* Dark blue bar */
+            color: #0674BD;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100; /* Make sure it stays above other content */
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+            border: 5px solid #8082A0;
+        }
+        .content {
+            margin-top: 50px;
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .game-iframe {
+            display: block
+            top: 20px;
+            left: 10px;
+            width: 80vw;
+            height: 80vh;
+            border:  2px;
+        }
+        .top-bar ul {
+            display: flex;              /* Use Flexbox */
+            padding: 0;
+            margin: 0;
+            list-style: none;           /* Remove bullets */
+            width: 100%;                /* Ensure the <ul> takes the full width of the viewport */
+        }
+
+        .top-bar li {
+            flex-grow: 1;               /* Allow each <li> to grow and take equal space */
+            text-align: center;         /* Center the content inside each <li> */
+        }
+
+        .top-bar a {
+            display: block;             /* Makes the <a> take up full width of the <li> */
+            text-decoration: none;      /* Remove underline from links */
+            color: #0674BD;               /* Set link color */
+            padding: 10px;              /* Add padding inside the links */
+        }
