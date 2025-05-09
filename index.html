@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>it54games</title>
-</head>
-<style>
-  .sidebar {
-        position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px; /* Adjust to your desired sidebar width */
-    height: 100%;
-    background-color: #333;
-    color: white;
-    padding-top: 20px;
-    box-sizing: border-box;
-  }
-    .content {
-      margin-left: 220px;
-      padding: 20px;
-    }
-    .game-iframe {
-  display: block
-  top: 20px;
-  left: 10px;
-  width: 80vw;
-  height: 80vh;
-  border: 2px solid #B64C5B;
-}
-  h1 {
-    font-color: #24215F;
-  }
-</style>
-<body>
-  <h1>Play Games Online For Free On it54!</h1>
-  <div class="sidebar">
-    <h3>Try more games here:</h3>
-  </div>
-  <div class="content">
-    <iframe src="1v1lol.html" class="game-iframe"></iframe>
-    <iframe src="ragdollhit.html" class="game-iframe"></iframe>
-    <iframe src="leveldevil.html" class="game-iframe"></iframe>
-    <iframe src="subwaysurfers.html" class="game-iframe"></iframe>
-  </div>
-</body>
+    <head>
+        <title>it54games</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <p>
+                <ul>
+                    <li><a href="gamegenres\racing.html">Racing</a></li>
+                    <li><a href="gamegenres\shooting.html">Shooting</a></li>
+                    <li><a href="google.com">Strategy</a></li>
+                    <li><a href="google.com">Multiplayer</a></li>
+                    <li><a href="google.com">Platformer</a></li>
+                    <li><a href="google.com">Skill</a></li>
+                </ul>
+            </p>
+        </div>
+        <div class="sidebar">
+            <h3>Try more games here:</h3>
+            <ul>
+                <li><button onclick="loadGame('leveldevil.html')">Play Level Devil</button></li>
+                <li><button onclick="loadGame('1v1lol.html')">Play 1v1.lol</button></li>
+                <li><button onclick="loadGame('ragdollhit.html')">Play Ragdoll Hit</button></li>
+                <li><button onclick="loadGame('subwaysurfers.html')">Play Subway Surfers</button></li>
+            </ul>
+            <p style="align-items: end;">Want to add games or report a problem?<br><br><a href="https://github.com/RubenM-unity/it54">Visit My Github Page</a></p>
+        </div>
+        <div class="content">
+            <h1 style="text-align: center;">Play Games Online For Free On it54!</h1>
+            <iframe src="1v1lol.html" id="game-frame" class="game-iframe"></iframe>
+            <button onclick="goFullscreen()">Fullscreen</button>
+            <p>
+                <hr>
+                <button onclick="loadGame(eaglercraft)">Minecraft</button>
+                <button onclick="loadGame(tag)">Tag</button>
+            </p>
+        </div>
+        <script>
+            function loadGame(gameFile) {
+                const iframe = document.getElementById("game-frame");
+                iframe.src = gameFile;
+            }
+            function goFullscreen() {
+                const iframe = document.getElementById("game-frame");
+                if (iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                } 
+                else if (iframe.webkitRequestFullscreen) { // Safari
+                    iframe.webkitRequestFullscreen();
+                } 
+                else if (iframe.msRequestFullscreen) { // IE/Edge
+                    iframe.msRequestFullscreen();
+                } 
+                else {
+                    alert("Fullscreen not supported in this browser.");
+                }
+            }
+        </script>
+    </body>
 </html>
