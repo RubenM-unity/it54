@@ -4,6 +4,21 @@
   <title>it54games</title>
 </head>
 <style>
+  .sidebar {
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust to your desired sidebar width */
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
     .game-iframe {
   display: block
   top: 20px;
@@ -13,14 +28,19 @@
   border: 2px solid #B64C5B;
 }
   h1 {
-    font-color: #24215F
+    font-color: #24215F;
   }
 </style>
 <body>
   <h1>Play Games Online For Free On it54!</h1>
-  <iframe src="1v1lol.html" class="game-iframe"></iframe>
-  <iframe src="ragdollhit.html" class="game-iframe"></iframe>
-  <iframe src="leveldevil.html" class="game-iframe"></iframe>
-  <iframe src="subwaysurfers.html" class="game-iframe"></iframe>
+  <div class="sidebar">
+    <h3>Try more games here:</h3>
+  </div>
+  <div class="content">
+    <iframe src="1v1lol.html" class="game-iframe"></iframe>
+    <iframe src="ragdollhit.html" class="game-iframe"></iframe>
+    <iframe src="leveldevil.html" class="game-iframe"></iframe>
+    <iframe src="subwaysurfers.html" class="game-iframe"></iframe>
+  </div>
 </body>
 </html>
