@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6539138098744199"
-     crossorigin="anonymous"></script>
         <title>it54games</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,12 +8,14 @@
         <div class="top-bar">
             <p>
                 <ul>
-                    <li><a href="gamegenres\racing.html">Racing</a></li>
-                    <li><a href="gamegenres\shooting.html">Shooting</a></li>
-                    <li><a href="google.com">Strategy</a></li>
-                    <li><a href="google.com">Multiplayer</a></li>
-                    <li><a href="google.com">Platformer</a></li>
-                    <li><a href="google.com">Skill</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Popular')">Popular</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Sport')"></a>Sport</li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Racing')">Racing</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Shooting')">Shooting</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Strategy')">Strategy</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Multiplayer')">Multiplayer</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Platformer')">Platformer</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection('Skill')">Skill</a></li>
                 </ul>
             </p>
         </div>
@@ -33,21 +33,115 @@
             <h1 style="text-align: center;">Play Games Online For Free On it54!</h1>
             <iframe src="1v1lol.html" id="game-frame" class="game-iframe"></iframe>
             <button onclick="goFullscreen()">Fullscreen</button>
-            <p>
+            <div class="games-list">
+                <div id="Popular">
+                    <h2>Popular</h2>
+                    <p>
+                        <button onclick="loadGame('buildnowgg.html')">Build Now GG</button>
+                        <button onclick="loadGame('eaglercraft.html')">Minecraft</button>
+                        <button onclick="loadGame('tag.html')">Tag</button>
+                        <button onclick="loadGame('leveldevil.html')">Play Level Devil</button>
+                        <button onclick="loadGame('ragdollhit.html')">Play Ragdoll Hit</button>
+                        <button onclick="loadGame('subwaysurfers.html')">Play Subway Surfers</button>
+                        <button onclick="loadGame('https://itsvijaysingh.github.io/Snow-Rider3D/')">Snow Rider 3D</button>
+                        <button onclick="loadGame('https://scratch.mit.edu/projects/930655286/fullscreen/')">Cookie Clicker</button>
+                    </p>
+                </div>
+                <div id="Sport">
+                    <h2>Sport</h2>
+                    <p>
+                        <button onclick="loadGame('superliquidsoccer.html')">Super Liquid Soccer</button>
+                        <button onclick="loadGame('tag.html')">Tag</button>
+                        <button onclick="loadGame('https://itsvijaysingh.github.io/Snow-Rider3D/')">Snow Rider 3D</button>
+                    </p>
+                </div>
+                <div id="Racing">
+                    <h2>Racing</h2>
+                    <p>
+                        <button onclick="loadGame('subwaysurfers.html')">Play Subway Surfers</button>
+                        <button onclick="loadGame('https://itsvijaysingh.github.io/Snow-Rider3D/')">Snow Rider 3D</button>
+                    </p>
+                </div>
+                <div id="Shooting">
+                    <h2>Shooting</h2>
+                    <p>
+                        <button onclick="loadGame('1v1lol.html')">Play 1v1.lol</button>
+                        <button onclick="loadGame('buildnowgg.html')">Build Now GG</button>
+                    </p>
+                </div>
+                <div id="Strategy">
+                    <h2>Strategy</h2>
+                    <p>
+                        <button onclick="loadGame('1v1lol.html')">Play 1v1.lol</button>
+                        <button onclick="loadGame('buildnowgg.html')">Build Now GG</button>
+                        <button onclick="loadGame('superliquidsoccer.html')">Super Liquid Soccer</button>
+                        <button onclick="loadGame('eaglercraft.html')">Minecraft</button>
+                        <button onclick="loadGame('tag.html')">Tag</button>
+                        <button onclick="loadGame('leveldevil.html')">Play Level Devil</button>
+                        <button onclick="loadGame('https://scratch.mit.edu/projects/930655286/fullscreen/')">Cookie Clicker</button>
+                    </p>
+                </div>
+                <div id="Multiplayer">
+                    <h2>Multiplayer</h2>
+                    <p>
+                        <button onclick="loadGame('1v1lol.html')">Play 1v1.lol</button>
+                        <button onclick="loadGame('buildnowgg.html')">Build Now GG</button>
+                        <button onclick="loadGame('eaglercraft.html')">Minecraft</button>
+                        <button onclick="loadGame('tag.html')">Tag</button>
+                        <button onclick="loadGame('bloxdio.html')">Bloxd.io</button>
+                    </p>
+                </div>
+                <div id="Platformer">
+                    <h2>Platformer</h2>
+                    <p>
+                        <button onclick="loadGame('tag.html')">Tag</button>
+                        <button onclick="loadGame('leveldevil.html')">Play Level Devil</button>
+                        <button onclick="loadGame('subwaysurfers.html')">Play Subway Surfers</button>
+                    </p>
+                </div>
+                <div id="Skill">
+                    <h2>Skill</h2>
+                    <p>
+                        <button onclick="loadGame('1v1lol.html')">Play 1v1.lol</button>
+                        <button onclick="loadGame('buildnowgg.html')">Build Now GG</button>
+                        <button onclick="loadGame('eaglercraft.html')">Minecraft</button>
+                        <button onclick="loadGame('tag.html')">Tag</button>
+                        <button onclick="loadGame('bloxdio.html')">Bloxd.io</button>
+                        <button onclick="loadGame('leveldevil.html')">Play Level Devil</button>
+                        <button onclick="loadGame('subwaysurfers.html')">Play Subway Surfers</button>
+                        <button onclick="loadGame('https://itsvijaysingh.github.io/Snow-Rider3D/')">Snow Rider 3D</button>
+                    </p>
+                </div>
+                <h2>All Games</h2>
+                <p>
                 <hr>
-                <button onclick="loadGame('eaglercraft.html')">Minecraft</button>
-                <button onclick="loadGame('tag.html')">Tag</button>
-                <button onclick="loadGame('buildnowgg.html')">Build Now GG</button>
-                <button onclick="loadGame('bloxdio.html')">Bloxd.io</button>
-                <button onclick="loadGame('superliquidsoccer.html')">Super Liquid Soccer</button>
-                <button onclick="loadGame('https://itsvijaysingh.github.io/Snow-Rider3D/')">Snow Rider 3D</button>
-                <button onclick="loadGame('https://scratch.mit.edu/projects/930655286/fullscreen/')">Cookie Clicker</button>
-            </p>
+                    <button onclick="loadGame('eaglercraft.html')">Minecraft</button> <!--done-->
+                    <button onclick="loadGame('tag.html')">Tag</button> <!--done-->
+                    <button onclick="loadGame('buildnowgg.html')">Build Now GG</button> <!--done-->
+                    <button onclick="loadGame('bloxdio.html')">Bloxd.io</button> <!--done-->
+                    <button onclick="loadGame('superliquidsoccer.html')">Super Liquid Soccer</button> <!--done-->
+                    <button onclick="loadGame('leveldevil.html')">Play Level Devil</button> <!--done-->
+                    <button onclick="loadGame('1v1lol.html')">Play 1v1.lol</button> <!--done-->
+                    <button onclick="loadGame('ragdollhit.html')">Play Ragdoll Hit</button> <!--done-->
+                    <button onclick="loadGame('subwaysurfers.html')">Play Subway Surfers</button> <!--done-->
+                    <button onclick="loadGame('https://itsvijaysingh.github.io/Snow-Rider3D/')">Snow Rider 3D</button> <!--done-->
+                    <button onclick="loadGame('https://scratch.mit.edu/projects/930655286/fullscreen/')">Cookie Clicker</button> <!--done-->
+                </p>
+            </div>
         </div>
         <script>
+            function scrollToSection(targetSectionToScroll) {
+                const offset = 80;
+                const targetPosition = document.getElementById(targetSectionToScroll).getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
             function loadGame(gameFile) {
                 const iframe = document.getElementById("game-frame");
                 iframe.src = gameFile;
+                scrollToSection('game-frame')
             }
             function goFullscreen() {
                 const iframe = document.getElementById("game-frame");
